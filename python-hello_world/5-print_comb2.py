@@ -1,2 +1,2 @@
 for i in range(100):
-   print(f"{i:02d}", end=", " .format(i) )
+   print(f"{i:02d}", end=", " .format(i))
