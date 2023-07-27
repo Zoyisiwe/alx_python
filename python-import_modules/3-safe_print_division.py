@@ -4,7 +4,7 @@ def safe_print_division(a, b):
         result = a / b
 
     except 0:
-        print("Inside result:None")
+        print("{:d} / {:d} = {}" .format(a, b, result))
 
         return None
     
