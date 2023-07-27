@@ -1,7 +1,7 @@
-import sys
+'''import sys
 
 def print_arguments():
-    arguments = sys.argv[1:]  # Exclude the script name from the arguments list
+    arguments = sys.argv[1:] 
     num_arguments = len(arguments)
 
     print(f"Number of argument(s): {num_arguments}", end="")
@@ -19,3 +19,16 @@ def print_arguments():
 
 if __name__ == "__main__":
     print_arguments()
+'''
+import sys
+
+def main():
+    # Get the list of arguments passed to the script (excluding the script name itself)
+    arguments = sys.argv[1:]
+    num_arguments = len(arguments)
+
+    print("Number of arguments:", num_arguments)
+    print("List of arguments:", arguments)
+
+if __name__ == "__main__":
+    main()
