@@ -8,6 +8,8 @@ if __name__=="__main__":
 
  result=add(a,b)
 
+ add(1,2)
+
  print("{}+{}={}" .format(a,b,result), end="\n")
 
 
