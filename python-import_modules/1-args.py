@@ -24,7 +24,7 @@ import sys
 
 def main():
     arguments = sys.argv[1:]
-    num_arguments = len(arguments)
+    num_arguments = len(sys.argv)
 
     if num_arguments == 0:
         print("Number of argument(s): 0.")
@@ -33,7 +33,7 @@ def main():
         plural_suffix = "s" if num_arguments > 1 else ""
         print(f"Number of argument(s): {num_arguments}, followed by argument{plural_suffix}:")
         for i, arg in enumerate(arguments, start=1):
-            print(f"{i}: {arg}")
+            print(f"{i}: {arg}, len(argv)")
 
 if __name__ == "__main__":
     main()
