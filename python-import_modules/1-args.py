@@ -1,26 +1,26 @@
-'''import sys
+import sys
 
 def print_arguments():
     arguments = sys.argv[1:] 
-    num_arguments = len(arguments)
+    num_arguments = len(sys.argv)
 
     print(f"Number of argument(s): {num_arguments}", end="")
 
     if num_arguments == 0:
         print(".")
     elif num_arguments == 1:
-        print(", followed by:")
+        print(":")
     else:
-        print("s, followed by:")
+        print(" :")
 
     for i, arg in enumerate(arguments, start=1):
         print(f"{i}: {arg}")
 
 
 if __name__ == "__main__":
-    print_arguments()'''
+    print_arguments()
 
-import sys
+'''import sys
 
 def main():
     arguments = sys.argv[1:]
@@ -32,8 +32,8 @@ def main():
     else:
         plural_suffix = "s" if num_arguments > 1 else ""
         print(f"Number of argument(s): {num_arguments}, followed by argument{plural_suffix}:")
-        for i, arg in enumerate(arguments, start=1):
-            print(f"{i}: {arg}, len(argv)")
+        for i, arg in enumerate (arguments, start=1):
+            print(f"{i}: {arg}")
 
 if __name__ == "__main__":
-    main()
+    main()'''
