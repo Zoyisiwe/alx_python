@@ -18,17 +18,22 @@ def print_arguments():
 
 
 if __name__ == "__main__":
-    print_arguments()
-'''
+    print_arguments()'''
+
 import sys
 
 def main():
-    # Get the list of arguments passed to the script (excluding the script name itself)
     arguments = sys.argv[1:]
     num_arguments = len(arguments)
 
-    print("Number of arguments:", num_arguments)
-    print("List of arguments:", arguments)
+    if num_arguments == 0:
+        print("Number of argument(s): 0.")
+        print(".")
+    else:
+        plural_suffix = "s" if num_arguments > 1 else ""
+        print(f"Number of argument(s): {num_arguments}, followed by argument{plural_suffix}:")
+        for i, arg in enumerate(arguments, start=1):
+            print(f"{i}: {arg}")
 
 if __name__ == "__main__":
     main()
