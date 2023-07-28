@@ -8,7 +8,9 @@ def no_c(my_string):
 
 result = no_c("Holberton School")
 print(result)
+
 result = no_c("Chicago")
 print(result)
+
 result = no_c("C is fun!")
 print(result)
