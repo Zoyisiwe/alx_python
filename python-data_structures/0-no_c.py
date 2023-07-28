@@ -6,11 +6,13 @@ def no_c(my_string):
     new_string = ''.join(filtered_chars)
     return new_string
 
-result = (no_c("Holberton School"))
-print(result)
+word = "School"
+new_word = no_c(word)
+print(new_word)
+print(word)
 
-result = (no_c("Chicago"))
-print(result)
+#result = (no_c("Chicago"))
+#print(result)
 
-result = (no_c("C is fun!"))
-print(result)
+#result = (no_c("C is fun!"))
+#print(result)
