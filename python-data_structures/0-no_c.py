@@ -9,8 +9,3 @@ word = "School"
 
 print = (no_c(word))
 
-#result = (no_c("Chicago"))
-#print(result)
-
-#result = (no_c("C is fun!"))
-#print(result)
