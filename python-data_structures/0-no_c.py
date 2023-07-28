@@ -6,8 +6,9 @@ def no_c(my_string):
     new_string = ''.join(filtered_chars)
     return new_string
 
-# Test the function
 result = no_c("Holberton School")
+print(result)
 result = no_c("Chicago")
+print(result)
 result = no_c("C is fun!")
 print(result)
