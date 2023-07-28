@@ -5,9 +5,9 @@ def no_c(my_string):
     return new_string
 
 word = "School"
-new_word = no_c(word)
+#new_word = no_c(word)
 
-print(new_word)
+print = (no_c(word))
 
 #result = (no_c("Chicago"))
 #print(result)
