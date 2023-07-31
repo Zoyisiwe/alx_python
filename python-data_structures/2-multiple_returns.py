@@ -5,7 +5,7 @@ def multiple_returns(sentence):
 sentence=""
 length, first = multiple_returns(sentence)
 print("Length: {:d} - First character: {}".format(length, first))
-print()
+
 
 # Test the function
 '''result1 = multiple_returns("Hello, World!")
