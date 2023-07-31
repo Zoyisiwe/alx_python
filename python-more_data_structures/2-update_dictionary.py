@@ -1,5 +1,6 @@
 def update_dictionary(a_dictionary, key, value):
     a_dictionary[key] = value
+    return a_dictionary
 
 # Test the function
 '''my_dict = {'a': 1, 'b': 2, 'c': 3}
