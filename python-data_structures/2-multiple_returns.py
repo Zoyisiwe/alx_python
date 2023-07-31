@@ -3,9 +3,11 @@ def multiple_returns(sentence):
     first_char = sentence[0] if length > 0 else None
     return length, first_char
 
-sentence= "Holberton"
+print()
+
+'''sentence = ""
 length, first = multiple_returns(sentence)
-print("Length: {:d} - First character: {}".format(length, first))
+print("Length: {:d} - First character: {}".format(length, first))'''
 
 
 # Test the function
