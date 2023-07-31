@@ -9,10 +9,10 @@ def print_matrix_integer(matrix=[[]]):
 print()
 
 # Test the function
-matrix = [
+'''matrix = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ]
 
-print_matrix_integer(matrix)
+print_matrix_integer(matrix)'''
