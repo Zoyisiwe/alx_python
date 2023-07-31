@@ -3,7 +3,7 @@ def multiple_returns(sentence):
     first_char = sentence[0] if length > 0 else None
     return length, first_char
 
-sentence= ""
+sentence= "Holberton"
 length, first = multiple_returns(sentence)
 print("Length: {:d} - First character: {}".format(length, first))
 
