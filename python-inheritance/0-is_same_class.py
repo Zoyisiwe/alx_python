@@ -2,4 +2,4 @@
 
 def is_same_class(obj, a_class):
     """"The function uses isinsrance to see if the class is exactly like a given object"""
-    return isinstance(obj, a_class)
+    return type(obj) is a_class
