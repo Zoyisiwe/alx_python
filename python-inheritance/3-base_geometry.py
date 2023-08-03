@@ -4,3 +4,7 @@
 class BaseGeometry():
     """This is empty class"""
     pass
+
+bg = BaseGeometry()
+
+print(dir(bg))
