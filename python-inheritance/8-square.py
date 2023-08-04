@@ -1,5 +1,6 @@
 """This file is based on the previus file named 7-rectangle"""
 
+
 class BaseGeometry():
     """This is empty class"""
     def __dir__(cls):
@@ -10,6 +11,7 @@ class BaseGeometry():
             if attr !='__init_subclass__':
                 n_attributes.append(attr)
         return n_attributes 
+
 
     def area(self):
         """This is the area of the class"""
@@ -37,10 +39,12 @@ class Rectangle(BaseGeometry):
     def area(self):
         """Different area"""
         return self.__width * self.__height
+    
 
     def __str__(self):
         """Area in a string format"""
         return f"[Rectangle] {self.__width}/{self.__height}"
+    
     
 class Square(Rectangle):
     """Class inherited from the rectangle class"""
