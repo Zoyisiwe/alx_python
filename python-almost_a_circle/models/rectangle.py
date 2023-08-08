@@ -78,3 +78,7 @@ class Rectangle(Base):
         """A public method of display and prints in stdout"""
         for _ in range(self.__height):
             print('#' * self.__width)
+
+    def __str__(self):
+        """This method overrides the other classes when called"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
