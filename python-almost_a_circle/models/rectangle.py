@@ -76,8 +76,11 @@ class Rectangle(Base):
     
     def display(self):
         """A public method of display and prints in stdout"""
+        for _ in range(self.__y):
+            print()
         for _ in range(self.__height):
-            print('#' * self.__width)
+            print(' ' * self.__x + '#' * self.__width)
+
 
     def __str__(self):
         """This method overrides the other classes when called"""
