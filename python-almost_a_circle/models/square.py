@@ -1,5 +1,6 @@
 """This is a inheritance from the rectangle file(class)"""
 
+
 # models/square.py
 
 from models.rectangle import Rectangle
