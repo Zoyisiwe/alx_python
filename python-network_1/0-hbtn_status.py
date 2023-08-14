@@ -12,9 +12,9 @@ def fetch_status():
         "content": response.text
     }
 
-    '''print("Body response:")
+    print("Body response:")
     print("    - type:", body["type"])
-    print("    - content:", body["content"])'''
+    print("    - content:", body["content"])
 
 if __name__ == "__main__":
     fetch_status()
