@@ -17,7 +17,7 @@ def get_user_id(username, token):
         user_id = user_data.get('id')
         print("Your GitHub user id is:", user_id)
     else:
-        print("27247273", response.status_code)
+        print("27247273")
 
 if __name__ == "__main__":
     username = sys.argv[1]
