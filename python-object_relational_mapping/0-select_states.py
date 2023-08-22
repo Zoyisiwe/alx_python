@@ -1,8 +1,8 @@
 """A script that lists all states from the database hbtn_0e_0_usa"""
 
-
 import MySQLdb
 import sys
+
 
 def list_states(mysql_username, mysql_password, database_name):
     """The function that takes 3 arguments"""
@@ -37,6 +37,7 @@ def list_states(mysql_username, mysql_password, database_name):
     # Close the cursor and the database connection
     cursor.close()
     db.close()
+    
 
 if __name__ == "__main__":
     # Get MySQL credentials from command-line arguments
