@@ -23,7 +23,7 @@ def list_states_starting_with_N(mysql_username, mysql_password, database_name):
     # Construct the SQL query
     query = """
         SELECT * FROM states
-        WHERE name LIKE 'N%'
+        WHERE name LIKE 'N'
         ORDER BY id ASC
     """
 
