@@ -5,7 +5,7 @@ import MySQLdb
 import sys
 
 
-def search_state_by_name(mysql_username, mysql_password, 
+def search_state_by_name(mysql_username, mysql_password,
                          database_name, search_name):
     """A function that takes 4 agruments"""
     # Connect to the MySQL server
@@ -49,5 +49,5 @@ if __name__ == "__main__":
     search_name = sys.argv[4]
 
     # Call the function to search for the state by name
-    search_state_by_name(mysql_username, mysql_password, 
+    search_state_by_name(mysql_username, mysql_password,
                          database_name, search_name)
