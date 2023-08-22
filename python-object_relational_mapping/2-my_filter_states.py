@@ -3,8 +3,8 @@
 import MySQLdb
 import sys
 
-def search_states_by_name(mysql_username, mysql_password, database_name, state_name):
-    """A function that takes 4 arguments"""
+def search_state_by_name(mysql_username, mysql_password, database_name, search_name):
+    """A function that takes arguments (4)"""
     # Connect to the MySQL server
     db = MySQLdb.connect(
         host="localhost",
@@ -17,15 +17,15 @@ def search_states_by_name(mysql_username, mysql_password, database_name, state_n
     # Create a cursor object to interact with the database
     cursor = db.cursor()
 
-    # Construct the SQL query with user input
+    # Construct the SQL query using format and user input
     query = """
         SELECT * FROM states
         WHERE name = '{}'
         ORDER BY id ASC
-    """.format(state_name)
+    """.format(search_name)
 
-    # Execute the query with the user input
-    cursor.execute(query, (state_name,))
+    # Execute the query
+    cursor.execute(query)
 
     # Fetch all the results
     results = cursor.fetchall()
@@ -39,11 +39,11 @@ def search_states_by_name(mysql_username, mysql_password, database_name, state_n
     db.close()
 
 if __name__ == "__main__":
-    # Get MySQL credentials and state name from command-line arguments
+    # Get MySQL credentials and search name from command-line arguments
     mysql_username = sys.argv[1]
     mysql_password = sys.argv[2]
     database_name = sys.argv[3]
-    state_name_searched = sys.argv[4]
+    search_name = sys.argv[4]
 
-    # Call the function to search and list states by name
-    search_states_by_name(mysql_username, mysql_password, database_name, state_name_searched)
+    # Call the function to search for the state by name
+    search_state_by_name(mysql_username, mysql_password, database_name, search_name)
