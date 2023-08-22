@@ -22,7 +22,7 @@ def list_cities_by_state(mysql_username, mysql_password,
 
     # Construct the SQL query using parameterized query and user input
     query = """
-        SELECT cities.id, cities.name, states.name
+        SELECT cities.id, states.name
         FROM cities
         JOIN states ON cities.state_id = states.id
         WHERE states.name = %s
