@@ -4,6 +4,7 @@
 import MySQLdb
 import sys
 
+
 def list_cities(mysql_username, mysql_password, database_name):
     # Connect to the MySQL server
     db = MySQLdb.connect(
