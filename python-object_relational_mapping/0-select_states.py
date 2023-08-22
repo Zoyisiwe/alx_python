@@ -1,9 +1,11 @@
 """A script that lists all states from the database hbtn_0e_0_usa"""
 
+
 import MySQLdb
 import sys
 
 def list_states(mysql_username, mysql_password, database_name):
+    """The function that takes 3 arguments"""
     # Connect to the MySQL server
     db = MySQLdb.connect(
         host="localhost",
