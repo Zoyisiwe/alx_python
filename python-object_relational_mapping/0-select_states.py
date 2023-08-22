@@ -36,8 +36,7 @@ def list_states(mysql_username, mysql_password, database_name):
 
     # Close the cursor and the database connection
     cursor.close()
-    db.close()
-    
+    db.close() 
 
 if __name__ == "__main__":
     # Get MySQL credentials from command-line arguments
