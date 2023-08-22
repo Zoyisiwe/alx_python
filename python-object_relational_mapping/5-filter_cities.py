@@ -6,7 +6,8 @@ import MySQLdb
 import sys
 
 
-def list_cities_by_state(mysql_username, mysql_password, database_name, state_name):
+def list_cities_by_state(mysql_username, mysql_password,
+                         database_name, state_name):
     # Connect to the MySQL server
     db = MySQLdb.connect(
         host="localhost",
