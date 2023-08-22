@@ -1,7 +1,9 @@
 """a script that takes in arguments and displays all values in a table"""
 
+
 import MySQLdb
 import sys
+
 
 def search_state_by_name(mysql_username, mysql_password, database_name, search_name):
     """A function that takes 4 agruments"""
