@@ -5,6 +5,7 @@
 import MySQLdb
 import sys
 
+
 def list_states_starting_with_N(mysql_username, mysql_password, database_name):
     """A function that list states with a name starting with N"""
     # Connect to the MySQL server
