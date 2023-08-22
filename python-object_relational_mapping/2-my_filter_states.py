@@ -20,9 +20,9 @@ def search_states_by_name(mysql_username, mysql_password, database_name, state_n
     # Construct the SQL query with user input
     query = """
         SELECT * FROM states
-        WHERE name LIKE %s
+        WHERE name = '{}'
         ORDER BY id ASC
-    """
+    """.format(state_name_searched)
 
     # Execute the query with the user input
     cursor.execute(query, (state_name,))
