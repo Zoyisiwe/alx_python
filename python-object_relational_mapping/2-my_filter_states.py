@@ -6,7 +6,7 @@ import sys
 
 
 def search_state_by_name(mysql_username, mysql_password,
-                        database_name, search_name):
+                         database_name, search_name):
     """A function that takes arguments (4)"""
     # Connect to the MySQL server
     db = MySQLdb.connect(
@@ -50,4 +50,4 @@ if __name__ == "__main__":
 
     # Call the function to search for the state by name
     search_state_by_name(mysql_username, mysql_password,
-                        database_name, search_name)
+                         database_name, search_name)
