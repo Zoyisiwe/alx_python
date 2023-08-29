@@ -1,5 +1,5 @@
 """the previous file to a new script that starts a Flask web application
-adding a text variable also """
+adding a text variable also, python text included"""
 
 from flask import Flask, escape
 
